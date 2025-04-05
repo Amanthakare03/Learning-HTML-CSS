@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scoreboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .scoreboard {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            display: inline-block;
+            margin-top: 50px;
+        }
+        .buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cricket Scoreboard</h1>
+    <h2>Team 1 vs Team 2</h2> 
+    <div class="scoreboard">
+        <h2>Runs: <span id="runs">0</span></h2>
+        <h2>Wickets: <span id="wickets">0</span></h2>
+        <h2>Overs: <span id="overs">0.0</span></h2>
+        <h2>Target: <span id="Target">0</span></h2>
+        <div class="buttons">
+            <button onclick="addRuns(1)">+1 Run</button>
+            <button onclick="addRuns(2)">+2 Run</button>
+            <button onclick="addRuns(3)">+3 Run</button>
+            <button onclick="addRuns(4)">+4 Runs</button>
+            <button onclick="addRuns(6)">+6 Runs</button>
+            <button onclick="addRuns(1)">wd Run</button>
+            <button onclick="addWicket()">Wicket</button>
+            <button onclick="addBall()">Add Ball</button>
+            <button onclick="resetScore()">Clear</button>
+        </div>
+    </div>
+
+    <script>
+        let runs = 0;
+        let wickets = 0;
+        let balls = 0;
+
+        function addRuns(num) {
+            runs += num;
+            document.getElementById("runs").innerText = runs;
+        }
+
+        function addWicket() {
+            if (wickets < 10) {
+                wickets++;
+                document.getElementById("wickets").innerText = wickets;
+            }
+        }
+
+        function addBall() {
+            balls++;
+            let overs = Math.floor(balls / 6) + "." + (balls % 6);
+            document.getElementById("overs").innerText = overs;
+        }
+
+        function resetScore() {
+            runs = 0;
+            wickets = 0;
+            balls = 0;
+            document.getElementById("runs").innerText = runs;
+            document.getElementById("wickets").innerText = wickets;
+            document.getElementById("overs").innerText = "0.0";
+        }
+    </script>
+</body>
+</html>
