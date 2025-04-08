@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+    font-style: italic;
+}
+.Cricket{
+    background-color: aqua;
+}
+.second{
+    color: brown;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-decoration:underline;
+    text-decoration-color: black;
+    text-decoration-style:dotted;
+}
