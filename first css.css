@@ -13,4 +13,13 @@ body{
     text-decoration:underline;
     text-decoration-color: black;
     text-decoration-style:dotted;
+    letter-spacing: 30px;
+    text-shadow: 4px 5px 6px rgb(38, 217, 190);
+}
+.pra{
+    font-weight: bold;
+    font-style: italic;
+    word-spacing: 60px;
+    line-height: 60px;
+    
 }

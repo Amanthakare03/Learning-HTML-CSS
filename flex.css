@@ -1,0 +1,54 @@
+body{
+    background-color: aqua;
+}
+.parent{
+    display: flex;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 290px;
+    padding-right: 240px;
+}
+p{
+    font-size: 20px;
+    font-style: normal;
+}
+.insta{
+    margin-right: 40px;
+    border: 2px solid;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 40px;
+}
+.twitter{
+    padding-top: 30px;
+    margin-right: 40px;
+    border: 2px solid;
+    text-align: center;
+    line-height: 30px;
+}
+.fb{
+    padding-top: 30px;
+    margin-right: 40px;
+    border: 2px solid;
+    text-align: center;
+    line-height: 30px;
+}
+.button{
+    background-color: whitesmok;
+    color: rgb(255, 0, 4);
+    padding-left: 90px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 90px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    word-spacing: px;
+}
+h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
