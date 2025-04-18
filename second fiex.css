@@ -20,3 +20,14 @@
     height: 50vh;
     background-repeat: no-repeat;
 }
+.btn:hover{
+    background-color: aqua;
+    color: aliceblue;
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 20px;
+    text-align: center;
+}
+.head{
+    background-color: aquamarine;
+}
